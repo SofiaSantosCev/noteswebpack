@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="app">
+    <aside>
+      <p id="user"></p>
+      <div id="notesSection">
+        <div class="headerList">
+          <img src="images/icons8-wallet_app.png" />
+          <p>All Notes</p>
+        </div>
+        <ul id="notesList" class="sidebarList">
+          <!-- dynamic list -->
+        </ul>
+      </div>
+      <div id="categoriesSection">
+        <div class="headerList">
+          <img src="images/icons8-book.png" />
+          <p>Notebooks</p>
+        </div>
+        <ul id="categoriesList" class="sidebarList"></ul>
+        <ul id="catList"></ul>
+      </div>
+      <button id="newNoteBtn">
+        <img src="images/icons8-plus_math.png" alt="add" />
+      </button>
+    </aside>
+    <main>
+      <div id="toolbar">
+        <button id="boldBtn">B</button>
+        <button>I</button>
+        <button>U</button>
+        <select name="categories" id="categoriesSelect" class="select-css">
+        </select>
+        <button>Delete</button>
+      </div>
+      <form id="form">
+        <div>
+          <div id="lastUpdateDate">
+            <p id="lastUpdate">Last update:</p>
+            <p id="date"></p>
+          </div>
+        </div>
+        <input
+          type="text"
+          id="inputTitle"
+          placeholder="Add a title"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Add a title'"
+        />
+        <textarea
+          id="content"
+          placeholder="Start writing here"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Start writing here'"
+        ></textarea>
+      </form>
+    </main>
+  </body>
+</html>

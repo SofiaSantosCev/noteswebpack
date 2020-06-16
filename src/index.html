@@ -5,5 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body class="login">
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="app-test.html">
+          <h2>Create Account</h2>
+          <input type="text" placeholder="Name" id="signUpName" />
+          <input type="text" placeholder="Email" id="signUpEmail" />
+          <input type="password" placeholder="Password" id="signUpPass" />
+          <button type="button" id="submitSignUp">Sign up</button>
+          <div id="sign-up"></div>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="app-test.html">
+          <h2>Sign in</h2>
+          <input
+            type="text"
+            placeholder="Email"
+            id="signInEmail"
+            name="email"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            id="signInPass"
+            name="password"
+          />
+          <button type="button" id="submitSignIn">Sign in</button>
+          <div id="sign-in"></div>
+        </form>
+      </div>
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <img class="logo" src="./images/brain-white.svg" alt="logo" />
+            <h1 class="title">Notes</h1>
+            <h1>Hello friend!</h1>
+            <p>Enter your personal details to start the journey with us</p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <img class="logo" src="./images/brain-white.svg" alt="logo" />
+            <h1 class="title">Notes</h1>
+            <h1>Welcome back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
